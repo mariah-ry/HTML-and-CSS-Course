@@ -1,0 +1,14 @@
+p {
+	color: darkseagreen;
+	background-color: grey;
+	font-size: small;
+	text-align: center;
+}
+h1 {
+	color: snow;
+	background-color: white;
+	font-size: medium;
+	text-align: center;
+	text-shadow: 2px 2px 4px #000000;
+	}
+	
