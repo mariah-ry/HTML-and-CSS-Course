@@ -1,0 +1,21 @@
+On this one-page website, you will include (these are the minimum “project requirements”):
+
+Home page section (heading tag, <p> tag, etc.)
+
+A section with pictures (<img> tags, etc.)
+
+Contact form (<form> tag, <input> tag, etc.)
+
+A section with a video(s) (<iframe> tag, src attribute, etc.)
+
+Footer (<footer> tag, etc.)
+
+A <nav> element that utilizes HTML bookmarks to allow the user to jump to various sections on the page.
+
+You can add other elements to the page if you wish; it must have these elements, however.
+
+Take the following actions to plan out your website:
+
+1. Decide the topic/subject matter for your website (e.g. animals, automobiles, travel photos, etc.).
+
+2. With the project requirements in mind, create a plan for your page. This plan can be hand-drawn on paper, typed out in a text document, sketched in a program, etc. – it’s your call.
