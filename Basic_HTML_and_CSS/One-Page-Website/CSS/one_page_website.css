@@ -1,0 +1,11 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+
+.rsvp {
+    width: 150px;
+    margin: 5px;
+    border: 2px solid grey;
+    border-radius: 6px;
+}
