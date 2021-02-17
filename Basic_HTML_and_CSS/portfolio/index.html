@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Mariah Young | Web Development</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/portfoliostyle.css">
+    </head>
+
+    <body class="background">
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#github">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <br>
+        <br>
+
+        <!--Background Video -->
+        <div id="home">
+            <video autoplay muted loop id="stock-video">
+                <source src="images/video/Computer - 1196.mp4" type="video/mp4">
+                    <!-- Display message if video fails to run -->
+                    Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- Video text -->
+        <div class="video-text">
+            <p class="white-text"><strong>I'm Mariah.</strong><br><br>I make websites so you don't have to.</p>
+            <br>
+            <br>
+            <p class="center">
+                Computers are supposed to make things easier. Your website should do the same. 
+                <br>
+                <br>A little can go a long way in any field: fashion, home decor, cooking, and yes, web design.
+            </p>
+        </div>
+
+        <!-- About Section -->
+        <div class="row" id="about">
+            <!-- Left column -->
+            <div class="column2">
+                <a href="https://www.linkedin.com/in/mariah-young-1a4575203/" target="_blank"><img src="images/pexels-photo-3964406.png" alt="seattle"></a>
+            </div>
+            <!-- Right column -->
+            <div class="column1">
+                <h1>About</h1>
+                <p>
+                    I'm a full stack developer in Seattle, WA hailing from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy's</a> <abbr title="User Experience/User Interface"> UI/UX </abbr>Web Design bootcamp and am trained in HTML, CSS, JavaScript, SQL and more.</a>
+                    <br>
+                    <br>I got into the computer field out of necessity in an environment lacking a dedicated System Admin. On that journey of "winging it" and restoring order, I discovered how much computers can do for people as well as how much of their use is lost on us because the subject gets so convoluded. They can seem overwhelming and complicated at times, but a computer is only a machine and simply does what you tell it to. 
+                    <br>
+                    <br>On that note, I believe the layout and design of a website should be kept simple for three reasons: the developer, the client, and the user.
+                    <br>
+                    <br><q>Good design is as little design as possible.</q> - Deiter Rams
+                </p>
+            </div>
+        </div>
+
+        <!-- GitHub Section -->
+        <div class="row" id="github">
+            <!-- Left Column -->
+            <div class="column1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/mariah-ry" target="_blank">GitHub: Mariah Young</a></p>
+                    </a></p>
+                </p>
+            </div>
+            <!-- Right Column -->
+            <div class="column2">
+                <a href="https://github.com/mariah-ry" target="_blank"><img src="images/GitHub.png" alt="GitHub logo"></a>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="row" id="contact">
+            <!-- Contact image, left column -->
+            <div class="column2 column_tall">
+                <img src="images/pexels-photo-263564.png" alt="contact_image">
+            </div>
+            <!-- Contact Form, Right Column -->
+            <div class="column1 column_tall">
+                <h1>Contact</h1>
+                <form action="https://formspree.io/f/xnqoydkv" method="POST">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name">
+                    <label>Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Please enter your email">
+                    <label>Message:</label>
+                        <input type="text" id="message" name="message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>
+                <p class="center">&copy; Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+            </p>
+        </footer>
+
+    </body>
+</html>
