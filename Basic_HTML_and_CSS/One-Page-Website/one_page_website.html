@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>The Adventure Co.</title>
-		<link rel="stylesheet" href="./css/one_page_website.css"
+		<link rel="stylesheet" href="./CSS/one_page_website.css">
+		<script src="./JS/one_page_website.js" defer></script>
 	</head>
 	
 	<body>
@@ -38,58 +39,110 @@
 			</div>
 			
 			<!-- ADVENTURE PHOTOS 1-->
-			<div>
-				<div>
+			<div class="row">
+				<div class="column">
 					<h4>BIG CITY ADVENTURE</h4>
-					<img src="./images/tokyo.png" alt="tokyo">
+					<img src="./Images/tokyo.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
 				</div>
 			</div>
 			<!-- END ADVENTURE PHOTOS 1 -->
 
 			<!-- ADVENTURE PHOTOS 2-->
-			<div>
-				<div>
+			<div class="row">
+				<div class="column">
 					<h4>REMOTE TEMPLE ADVENTURE</h4>
-					<img src="./images/seoul-temple.png" alt="temple">
+					<img src="./images/seoul-temple.png" alt="Seoul Temple Adventure" onclick="openModal();currentSlide(2)" class="hover-shadow">
 				</div>
 			</div>
 			<!-- END ADVENTURE PHOTOS 2 -->
 			
 			<!-- ADVENTURE PHOTOS 3-->
-			<div>
-				<div>
+			<div class="row">
+				<div class="column">
 					<h4>MOUNTAIN ADVENTURE</h4>
-					<img src="./images/mountains.png" alt="mountain">
+					<img src="./images/mountains.png" alt="Mountain Adventure" onclick="openModal();currentSlide(3)" class="hover-shadow">
 				</div>
 			</div>
 			<!-- END ADVENTURE PHOTOS 3 -->
 			
 			<!-- ADVENTURE PHOTOS 4-->
-			<div>
-				<div>
+			<div class="row">
+				<div class="column">
 					<h4>BEACH ADVENTURE</h4>
-					<img src="./images/hawaii.png" alt="beach">
+					<img src="./images/hawaii.png" alt="beach" onclick="openModal();currentSlide(4)" class="hover-shadow">
 				</div>
 			</div>
 			<!-- END ADVENTURE PHOTOS 4-->
 			
 			<!-- ADVENTURE PHOTOS 5-->
-			<div>
-				<div>
+			<div class="row">
+				<div class="column">
 					<h4>SMALL TOWN ADVENTURE</h4>
-					<img src="./images/Colmar.png" alt="town">
+					<img src="./images/Colmar.png" alt="town" onclick="openModal();currentSlide(5)" class="hover-shadow">
 				</div>
 			</div>
 			<!-- END ADVENTURE PHOTOS 5 -->
 			
 			<!-- ADVENTURE PHOTOS 6-->
-			<div>
-				<div>
+			<div class="row">
+				<div class="column">
 					<h4>DESERT ADVENTURE</h4>
-					<img src="./images/utah.png" alt="desert">
+					<img src="./images/utah.png" alt="desert" onclick="openModal();currentSlide(6)" class="hover-shadow">
 				</div>
 			</div>
 			<!-- END ADVENTURE PHOTOS 6 -->
+
+			<!-- The Modal/Lightbox -->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+					<div class="mySlides">
+						<div class="numbertext">1 / 6</div>
+						<img src="./Images/tokyo.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 6</div>
+						<img src="./Images/seoul-temple.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 6</div>
+						<img src="./Images/mountains.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4 / 6</div>
+						<img src="./Images/hawaii.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">5 / 6</div>
+						<img src="./Images/Colmar.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">6 / 6</div>
+						<img src="./Images/utah.png" style="width:100%">
+					</div>
+
+					<!-- Next/Prev controls -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<!-- Caption text -->
+					<div class="caption-container">
+						<p id="caption"</p>
+					</div>
+
+					<!-- Thumbnail image controls -->
+					<div class="column">
+						<img class="thumb" src="./Images/tokyo.png" onclick="currentSlide(1)" alt="tokyo">
+					</div>
+
+				</div>
+			</div>
 		</section>
 		
 		<!-- END ADVENTURE GALLERY -->
