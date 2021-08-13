@@ -5,9 +5,14 @@
         <meta name="viewport" content="width=device-width">
         <title>Mariah Young | Web Development</title>
         <link rel="stylesheet" type="text/css" href="stylesheet/portfoliostyle.css">
+        <script src="js/portfolio.js" async></script>
     </head>
 
     <body class="background">
+
+        <script>
+            document.body.className = "hidden";
+        </script>
 
         <!-- Navbar -->
         <div class="navbar">
@@ -45,17 +50,15 @@
         <div class="row" id="about">
             <!-- Left column -->
             <div class="column2">
-                <a href="https://www.linkedin.com/in/mariah-young-1a4575203/" target="_blank"><img src="images/pexels-photo-3964406.png" alt="seattle"></a>
+                <a href="https://www.linkedin.com/in/mariah-young-1a4575203/" target="_blank"><img src="images/seattle.jpg" alt="seattle"></a>
             </div>
             <!-- Right column -->
             <div class="column1">
-                <h1>About</h1>
+                <h2>About</h2>
                 <p>
-                    I'm a full stack developer in Seattle, WA hailing from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy's</a> <abbr title="User Experience/User Interface"> UI/UX </abbr>Web Design bootcamp and am trained in HTML, CSS, JavaScript, SQL and more.</a>
+                    I'm a front-end developer in Seattle, WA hailing from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy's</a> Front-End Web Developer bootcamp and am trained in the use of HTML, CSS and JavaScript.</a>
                     <br>
-                    <br>I got into the computer field out of necessity in an environment lacking a dedicated System Admin. On that journey of "winging it" and restoring order, I discovered how much computers can do for people as well as how much of their use is lost on us because the subject gets so convoluted. They can seem overwhelming and complicated at times, but a computer is only a machine and simply does what you tell it to. 
-                    <br>
-                    <br>On that note, I believe the layout and design of a website should be kept simple for three reasons: the developer, the client, and the user.
+                    <br>I got interested in computers after inadvertently becoming a System Admin out of necessity. On that journey, I discovered how much computers can do for people as well as how much of their use is lost on us because of a lack of knowledge and wanted to learn how to help people use them. They can seem complicated, but are only a machines and simply do what you tell them. On that note, I believe the layout and design of a website should be kept simple for three reasons: the developer, the client, and the user.
                     <br>
                     <br><q>Good design is as little design as possible.</q> - Deiter Rams
                 </p>
@@ -66,7 +69,7 @@
         <div class="row" id="github">
             <!-- Left Column -->
             <div class="column1">
-                <h1>GitHub</h1>
+                <h2>GitHub</h2>
                 <p>
                     You can view my coding projects on my GitHub profile here:
                     <br>
@@ -74,9 +77,9 @@
                     </a></p>
                 </p>
             </div>
-            <!-- Right Column -->
+            <!-- Right Column (slideshow) -->
             <div class="column2">
-                <a href="https://github.com/mariah-ry" target="_blank"><img src="images/GitHub.png" alt="GitHub logo"></a>
+                <a href="https://github.com/mariah-ry" target="_blank"></a><img src="images/github.png" alt="github">
             </div>
         </div>
 
@@ -84,20 +87,27 @@
         <div class="row" id="contact">
             <!-- Contact image, left column -->
             <div class="column2 column_tall">
-                <img src="images/pexels-photo-263564.png" alt="contact_image">
+                <img src="images/contact1.jpg" alt="contact_image">
             </div>
             <!-- Contact Form, Right Column -->
             <div class="column1 column_tall">
-                <h1>Contact</h1>
-                <form action="https://formspree.io/f/xnqoydkv" method="POST">
+                <button onclick="openForm()" id="pop_up_button">CONTACT</button>
+                <form action="https://formspree.io/f/xnqoydkv" method="POST" id="contactForm">
+                    <h2>Contact</h2>
+
                     <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name">
+                    <input type="text" placeholder="Enter your name" required>
+                    
                     <label>Email:</label>
-                        <input type="text" id="email" name="email" placeholder="Please enter your email">
+                    <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                    
                     <label>Message:</label>
-                        <input type="text" id="message" name="message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+                    <input type="text" id="message" name="message" placeholder="Enter message">
+                    
+                    <button type="submit" class="submit">Submit</button>
+                    <button type="submit" class="close" onclick="closeForm()">close</button>
                 </form>
+
             </div>
         </div>
 
